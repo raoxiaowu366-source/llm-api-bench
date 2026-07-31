@@ -3,7 +3,11 @@
 ## 项目简介
 本项目用于测试各大模型厂商（如 DeepSeek、智谱 AI、月之暗面 Kimi、硅基流动 SiliconFlow、OpenRouter、阿里云通义千问等）申请到的 API Key 可用性，并记录其连通状态、响应延迟、支持模型等信息。
 
-## 核心架构与原理
+## 部署与 Git 信息
+- GitHub 账号：`raoxiaowu366-source`
+- 建议仓库名：`llm-api-bench` (或 `api-test`)
+- 远程推送命令：`git push -u origin main`
+
 1. **配置管理**：所有敏感 API Key 统一存放在 `.env` 文件中（如 `ZHIPU_API_KEY`、`SENSENOVA_API_KEY` 等），严禁提交到 Git 仓库。
 2. **检测脚本 (`test_api.py`)**：
    - 自动解析 `.env` 中的各厂商 API 配置。

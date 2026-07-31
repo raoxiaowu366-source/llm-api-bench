@@ -32,10 +32,11 @@
 3. **模型名称匹配与别名机制**：
    - 建立 `MODEL_NAME_ALIAS_MAP` 字典及精准完全匹配逻辑，废除可能导致混淆的前缀模糊匹配。
    - 成功将 `GLM-4.7-Flash` 精准更正映射到其在 Arena 上的真实模型 `glm-4.7-flash`（**1367.8 分，即 1368 分**），`deepseek-v4-flash` 映射至 (`1435.8 (#99)`)。
-4. **三大榜单数据持久化与 Markdown 填充**：
-   - 生成 `arena_scores.json`、`benchlm_scores.json` 与 `clawbench_scores.json` 持久化记录。
-   - 动态更新 [ALL_MODELS.md](file:///d:/api/ALL_MODELS.md) 跨厂商能力对比总表，成功新增 `OpenClaw 智能体评分 (Rank)` 第 11 列。完美填充商汤 `sensenova-6.7-flash-lite` 的亮眼智能体得分 **`71.59 (#6)`**，并将 `GLM-4.7-Flash` 标注优化为 `N/A (参考主模型 54.58)`。
-   - 确立了统一的自动化流水线防漏机制：每次执行 `python fetch_arena_scores.py`，程序将自动穿透三大榜单对表格内所有注册模型进行 100% 全量查分。
+5. **Git 初始化与版本控制**：
+   - 检查全局配置获取用户名 `raoxiaowu366-source`。
+   - 成功执行 `git init` 本地仓库初始化，确认 `.env` 敏感 Key 文件受 `.gitignore` 严格保护未被提交。
+   - 完成 Root Commit `24ac3af`（`feat: 新增 LMSYS Arena, BenchLM, OpenClaw 三大榜单评分自动抓取与填表功能`），工作区显示 Clean。
+
 
 
 
