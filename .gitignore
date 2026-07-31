@@ -1,0 +1,9 @@
+# 敏感密钥文件（切勿提交）
+.env
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# 临时测试日志与数据
+api_records.json

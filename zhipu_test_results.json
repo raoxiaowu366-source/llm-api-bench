@@ -1,0 +1,58 @@
+[
+  {
+    "model": "GLM-4.7-Flash",
+    "type": "text_tool",
+    "status": "SUCCESS",
+    "latency": 1.4002373218536377,
+    "response": "<think>... </think> 我来帮您查询北京今天的天气情况。",
+    "error": null
+  },
+  {
+    "model": "GLM-4.6V-Flash",
+    "type": "vision",
+    "status": "FAILED",
+    "latency": 15.778553485870361,
+    "response": "",
+    "error": "HTTP 429: {\"error\":{\"code\":\"1305\",\"message\":\"该模型当前访问量过大，请您稍后再试\"}}"
+  },
+  {
+    "model": "GLM-4.1V-Thinking-Flash",
+    "type": "vision",
+    "status": "FAILED",
+    "latency": 10.671605825424194,
+    "response": "",
+    "error": "HTTP 400: {\"error\":{\"code\":\"1210\",\"message\":\"图片输入格式/解析错误\"}}"
+  },
+  {
+    "model": "GLM-4-Flash-250414",
+    "type": "text_tool",
+    "status": "SUCCESS",
+    "latency": 1.1441385746002197,
+    "response": "[调用工具: get_weather]",
+    "error": null
+  },
+  {
+    "model": "GLM-4V-Flash",
+    "type": "vision",
+    "status": "FAILED",
+    "latency": 11.395591259002686,
+    "response": "",
+    "error": "HTTP 400: {\"error\":{\"code\":\"1210\",\"message\":\"图片输入格式/解析错误\"}}"
+  },
+  {
+    "model": "CogView-3-Flash",
+    "type": "image_gen",
+    "status": "SUCCESS",
+    "latency": 8.781752824783325,
+    "response": "图片URL生成成功 (https://maas-watermark-prod-new.cn-wlcb....)",
+    "error": null
+  },
+  {
+    "model": "CogVideoX-Flash",
+    "type": "video_gen",
+    "status": "SUCCESS",
+    "latency": 0.30048704147338867,
+    "response": "视频异步任务创建成功 (ID: 202607301429506dd8bd9bba8e43ff)",
+    "error": null
+  }
+]
